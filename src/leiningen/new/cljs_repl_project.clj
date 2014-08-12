@@ -18,12 +18,14 @@
      ["README.md"                              (render "README.md" data)]
      ["doc/intro.md"                           (render "doc/intro.md" data)]
      ["project.clj"                            (render "project.clj" data)]
-     ["src/cljs/{{sanitized}}/core.cljs"       (render "cljs/core.cljs" data)]
      ["src/clj/{{sanitized}}/core.clj"         (render "clj/core.clj" data)]
      ["src/clj/{{sanitized}}/routes.clj"       (render "clj/routes.clj" data)]
      ["test/clj/{{sanitized}}/core_test.clj"   (render "test/clj/core_test.clj" data)]
+     ["src/cljs/{{sanitized}}/core.cljs"       (render "cljs/core.cljs" data)]
      ["test/cljs/{{sanitized}}/core_test.cljs" (render "test/cljs/core_test.cljs" data)]
+     ["src/cljx/{{sanitized}}/everywhere.cljx" (render "cljx/everywhere.cljx" data)]
      ["resources/public/example.html"          (render "resources/public/example.html" data)]
+     ["scripts/build.sh"                       (render "scripts/build.sh" data) :executable true]
      ["scripts/start-web-server.sh"            (render "scripts/start-web-server.sh" data) :executable true]
      ["scripts/start-repl-server.sh"           (render "scripts/start-repl-server.sh" data) :executable true])))
 
